@@ -1,0 +1,14 @@
+import { Injectable } from '@angular/core';
+
+import { City } from '../interfaces/city';
+import { CITIES } from '../../mocks/cities.mock';
+
+@Injectable()
+
+export class CityService {
+
+ getCities(): Array<City> {
+   return CITIES;
+ }
+
+}
